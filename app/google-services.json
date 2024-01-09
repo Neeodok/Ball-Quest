@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "345875475230",
+    "project_id": "ball-quest",
+    "storage_bucket": "ball-quest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345875475230:android:626a699590a48cd57cb70f",
+        "android_client_info": {
+          "package_name": "babo.qlest.mjest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhlrRcQRBvzNZe0Kmh0oUBldCv9sR88EU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game"
+
+    >
+    
+   <ImageView
+       android:id="@+id/logo"
+       android:layout_gravity="bottom"
+       android:layout_width="300dp"
+       android:layout_height="150dp"
+       android:layout_marginTop="100dp"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/game_title"/>
+
+    <TextView
+        android:id="@+id/btn_bonus"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Bonus Game"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/fintik"
+        android:textSize="10sp"
+        android:layout_below="@+id/startGameButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_1"/>
+
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_width="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/character"/>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_width="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/game_character_lose"/>
+
+    <TextView
+        android:id="@+id/startGameButton"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Start GAme"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/fintik"
+        android:textSize="14sp"
+        android:background="@drawable/btn_1"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game">
+
+
+    <View
+        android:id="@+id/btnBetUp"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/right_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBet"
+        app:layout_constraintStart_toEndOf="@+id/tvBet"
+        app:layout_constraintTop_toTopOf="@+id/tvBet" />
+
+    <View
+        android:id="@+id/tv_count"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/famous_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBank">
+
+        <View
+            android:id="@+id/card"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_card" />
+
+        <View
+            android:id="@+id/unknown_card"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_card" />
+
+        <View
+            android:id="@+id/card1"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/back_card" />
+
+        <View
+            android:id="@+id/unknown_card1"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/back_card" />
+
+        <View
+            android:id="@+id/card2"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_card" />
+
+        <View
+            android:id="@+id/unknown_card2"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_card" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/famous_card"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:background="@drawable/card_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <View
+        android:id="@+id/btnCardsListDown"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/famous_card"
+        app:layout_constraintEnd_toStartOf="@+id/famous_card"
+        app:layout_constraintTop_toTopOf="@+id/famous_card" />
+
+    <View
+        android:id="@+id/btnCardsListUp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/right_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/famous_card"
+        app:layout_constraintStart_toEndOf="@+id/famous_card"
+        app:layout_constraintTop_toTopOf="@+id/famous_card" />
+
+    <TextView
+        android:id="@+id/tvBank"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/tab_text"
+        android:gravity="center"
+        android:text="10000"
+        android:fontFamily="@font/fintik"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationWinLottie"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="animconfeti.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/btn_start"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="Start"
+        android:gravity="center"
+        android:fontFamily="@font/fintik"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@drawable/btn_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvBet"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/tab_text"
+        android:gravity="center"
+        android:fontFamily="@font/fintik"
+        android:text="50"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/famous_card" />
+
+    <View
+        android:id="@+id/btnBetDown"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBet"
+        app:layout_constraintEnd_toStartOf="@+id/tvBet"
+        app:layout_constraintTop_toTopOf="@+id/tvBet" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
